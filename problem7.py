@@ -1,10 +1,12 @@
 import random
 
 num=int(input("How many numbers do you want to put in the list? "))
-numbers=[]
 
-p=random.sample(range(1,500), num)
-numbers.append(p)
+p=random.sample(range(1,100), num)
+for i in p:
+    p.append(i)
+    if i==i:
+        p.remove(i)
 
-print(numbers)
+
 print(p)
